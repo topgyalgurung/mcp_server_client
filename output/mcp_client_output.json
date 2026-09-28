@@ -1,0 +1,20 @@
+[Tool(
+    name='read_doc_contents', 
+    description='Read the contents of a document and return it as a string', 
+    inputSchema={
+        'properties': {
+            'doc_id': {
+                'description': 'Id of the document to read', 
+                'title': 'Doc Id', 
+                'type': 'string'
+            }
+        }, 'required': ['doc_id'
+        ], 'title': 'read_documentArguments', 'type': 'object'
+    }, annotations=None), Tool(name='edit a document', description='Edit a document by replacing a string in the documents content with a new string', inputSchema={'properties': {'doc_id': {'description': 'Id of the document that will be edited', 'title': 'Doc Id', 'type': 'string'
+            }, 'old_str': {'description': 'The text to replace. Must match exactly, including whitespace.', 'title': 'Old Str', 'type': 'string'
+            }, 'new_str': {'description': 'The new text to insert in place of the old text.', 'title': 'New Str', 'type': 'string'
+            }
+        }, 'required': ['doc_id', 'old_str', 'new_str'
+        ], 'title': 'edit_documentArguments', 'type': 'object'
+    }, annotations=None)
+]
